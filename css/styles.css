@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #124604;
+  --secondary-color: #fff;
+  --accent-color: #f00;
+  --primary-text: #fff;
+  --secondary-text: #000;
+}
+
 * {
   box-sizing:border-box;
 }
+
 body {
   padding:0;
   margin:0;
+ font-family: 'Roboto', sans-serif;
 }
 
 header, footer {
-  background-color:#333;
-  color:#fff;
+  background-color: var(--primary-color);
+  color:var(--accent-color);
   padding:1rem;
 }
 
@@ -23,7 +35,7 @@ header nav ul {
   list-style-type:none;
 }
 header nav ul li a {
-  color:#fff;
+  color:var(--primary-text);
   text-decoration: none;
   padding:0.5rem 1rem;
   transition: background-color 0.75s ease;
@@ -33,4 +45,44 @@ header nav ul li a:hover {
   background-color:#fff;
   color:#333;
   transition: background-color 0.75s ease;
+}
+
+#players {
+  background-color: var(--secondary-color);
+  background-image: url('https://picsum.photos/1200/640');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding:2rem 0;
+}
+
+#players h2 {
+  text-align:center;
+}
+#players > div > p {
+  text-align:center;
+  font-family: 'Architects Daughter', cursive;
+  font-size:1.5rem;
+}
+#players div ul {
+  display:flex;
+  justify-content: space-around;
+  list-style-type:none;
+  flex-wrap:wrap;
+  padding:0;
+  max-width: 1024px;
+  margin:0 auto;
+}
+
+#players div ul li {
+  box-shadow: 3px 3px 7px 2px var(--primary-color);
+  margin: 0.5rem;
+  background-color: var(--secondary-color);
+  border-radius:21px;
+  overflow:hidden;
+}
+
+#players div ul li h3, 
+#players div ul li p {
+  padding: 0.2rem 0.5rem;
 }
