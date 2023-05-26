@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Basketball Team - Welcome!</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    var hola = "Hola Mundo";
-    alert(hola);
-  </script>
+  <link rel="stylesheet" href="css/carousel.css">
   <script src="js/script.js"></script>
+  <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -25,13 +23,49 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Welcome to the New Basketball Team</h1>
-      <p>Join us on our journey to greatness!</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/1/1024/640" alt="News 1">
+        <div class="carousel-caption">
+          <h2>News 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/2/1024/640" alt="News 2">
+        <div class="carousel-caption">
+          <h2>News 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/3/1024/640" alt="News 3">
+        <div class="carousel-caption">
+          <h2>News 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/4/1024/640" alt="News 4">
+        <div class="carousel-caption">
+          <h2>News 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="carousel-navigation">
+      <button class="carousel-arrow carousel-prev">&#8249;</button>
+      <div class="carousel-dots">
+        <span class="carousel-dot active"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
+      </div>
+      <button class="carousel-arrow carousel-next">&#8250;</button>
+    </div>
+  </div>
+
 
   <section id="about">
     <div class="container">

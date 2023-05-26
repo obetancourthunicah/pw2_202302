@@ -1,0 +1,42 @@
+.carousel-container{
+  overflow:hidden;
+  width:100vw;
+  margin: 1rem auto;
+  max-width:1024px;
+  max-height:640px;
+  position:relative;
+  border:1px solid red;
+}
+.carousel{
+  display:flex;
+  transition:transform 0.5s ease-in-out;
+}
+.carousel-navigation {
+  position:absolute;
+  bottom:10px;
+  width:100vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.carousel-dot {
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background-color:#fff;
+  margin:0 0.5rem;
+  cursor:pointer;
+}
+
+.carousel-item{
+  position:relative;
+}
+.carousel-caption{
+  position:absolute;
+  bottom:3rem;
+  left:0;
+  width:100%;
+  background-color:rgba(0,0,0,0.5);
+  color:#fff;
+  padding:0.5rem;
+}
