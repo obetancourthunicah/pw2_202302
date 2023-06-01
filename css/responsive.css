@@ -1,0 +1,43 @@
+:root {
+  --m-width: 720px;
+  --l-width: 1024px;
+  --xl-width: 1200px;
+  --p-bg-color: #f5f5f5;
+  --p-text-color: #333;
+  --s-bg-color:#333;
+  --s-text-color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--p-bg-color);
+  color: var(--p-text-color);
+}
+
+/* Mobile First */
+header, footer {
+  background-color: var(--s-bg-color);
+  color: var(--s-text-color);
+  padding: 1rem;
+}
+main {
+  padding: 1rem;
+  background-color: #8f1717;
+}
+
+@media (min-width:720px) {
+  main {
+    background-color: aqua;
+  }
+}
+
+@media (min-width:1024px) {
+  main {
+    background-color: rgb(9, 114, 18);
+  }
+}
