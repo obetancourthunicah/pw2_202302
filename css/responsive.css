@@ -29,15 +29,92 @@ main {
   padding: 1rem;
   background-color: #8f1717;
 }
+.hero {
+  margin-bottom: 1rem;
+}
+.hero img{
+  width:100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cards .card {
+  position:relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+}
+.cards .card img {
+  width: 100%;
+  object-fit: cover;
+}
+.cards .card h2 {
+  margin: 0;
+  padding: 1rem;
+}
+.cards .card .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+  height:54px;
+  max-width: 100px;
+  background-color: var(--s-bg-color);
+  color: var(--s-text-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.cards .card .circleBtn{
+  position:absolute;
+  right:1rem;
+  bottom:1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+  height:54px;
+  width:54px;
+  text-decoration: none;
+  background-color: var(--s-bg-color);
+  color: var(--s-text-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+  margin-left: 1rem;
+}
 
 @media (min-width:720px) {
   main {
     background-color: aqua;
+  }
+
+  .cards .card {
+    width: calc(241.3333333px - 0.6rem);
+  
   }
 }
 
 @media (min-width:1024px) {
   main {
     background-color: rgb(9, 114, 18);
+  }
+}
+
+@media (min-width:1200px) {
+  main {
+    background-color: rgb(114, 9, 114);
+  }
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
